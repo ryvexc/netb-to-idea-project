@@ -5,19 +5,28 @@
 ## Note
 #### this program is still on development and this was build on linux.
 
+---
+## Build
+how to build and run
+```bash
+$ cd src
+$ javac *.java
+```
+
 ---  
 ## How To Run
-see the requirement to run this
+see the requirement to run this  
+note: make sure you already on src directory
 - run using args:
 ```bash
-$ rynetin --source <your netbeans project path> --to <your intellij project path>
+$ java rynetin --source <your netbeans project path> --to <your intellij project path>
 or
-$ rynetin -s <your netbeans project path> -t <your intellij project path>
+$ java rynetin -s <your netbeans project path> -t <your intellij project path>
 ```
 
 - run inside of the program:
 ```bash
-$ rynetin
+$ java rynetin
 netbeans project path: <your netbeans project path>
 intellij project path: <your intellij project path>
 ```
