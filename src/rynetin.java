@@ -16,6 +16,7 @@ public class rynetin {
         Lexer lex = new Lexer(main_args).parse();
         Printer.printInfo(lex);
         Integrity.check(lex);
-        Instruction.run(lex);
+        Instruction.run(lex, System.getProperty("os.name"));
+        System.out.println("Done, Exit.");
     }
 }
