@@ -14,7 +14,7 @@ public class Instruction {
             Process proc = new ProcessBuilder(args).start();
             System.out.println("\t[OK]");
             System.out.println("Writing into Intellij Project...\t[OK]");
-        } else if(os_type.equals("Windows")) {
+        } else if(os_type.contains("Windows")) {
             String[] args = new String[]{"xcopy", lex.selected_nbproj, lex.destination};
             Process proc = new ProcessBuilder(args).start();
             System.out.println("\t[OK]");
